@@ -44,7 +44,7 @@ make convert-all
 # Step 5
 make bc7_eval_ner
 ```
-We do not plan to implement transfer learning and model ensemble, but we will consider it if requested.
+NOTE: We do not plan to implement transfer learning and model ensemble, but we will consider it if requested.
 
 ## Named Entity Normalization (NEN)
 We will update it soon.
