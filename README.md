@@ -12,10 +12,10 @@ This repository is for implementations of our named entity recognition (NER) and
 ## Requirements
 ```bash
 # Download this project
-git clone https://github.com/sylee0520/LIQUID.git
+git clone https://github.com/dmis-lab/bc7-chem-id.git
 cd bc7-chem-id
 
-# Create a conda virtual environment
+# Create a conda environment
 conda create -n bc7 python=3.8
 conda activate bc7
 
@@ -24,6 +24,21 @@ pip install -r requirements.txt
 ```
 
 ## Named Entity Recognition (NER)
+
+### Train
+```bash
+export MODEL_NAME=pubmedbert
+
+make train-ner
+
+make test-ner
+
+make majority-voting
+
+make convert-all
+
+make bc7_eval_ner
+```
 
 ## Named Entity Normalization (NEN)
 We will update it soon.
