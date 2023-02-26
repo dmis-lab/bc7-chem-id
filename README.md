@@ -24,21 +24,27 @@ pip install -r requirements.txt
 ```
 
 ## Named Entity Recognition (NER)
+NER consists of the following five steps: (1) training the NER model, (2) making predictions on the test set, (3) refining the predictions using majority voting, (4) converting the refined predictions to the BC7 evaluation format (this includes a post-processing step for mutation names), and (5) evaluating the performance.
 
-### Train
 ```bash
 export MODEL_NAME=pubmedbert
 
+# Step 1
 make train-ner
 
+# Step 2
 make test-ner
 
+# Step 3
 make majority-voting
 
+# Step 4
 make convert-all
 
+# Step 5
 make bc7_eval_ner
 ```
+We do not plan to implement transfer learning and model ensemble, but we will consider it if requested.
 
 ## Named Entity Normalization (NEN)
 We will update it soon.
