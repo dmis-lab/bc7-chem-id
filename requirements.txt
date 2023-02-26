@@ -1,0 +1,7 @@
+torch
+transformers
+bioc
+scispacy
+datasets
+gpustat
+seqeval
