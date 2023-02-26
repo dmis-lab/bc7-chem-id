@@ -1,6 +1,6 @@
 # DMIS at BioCreative VII NLMChem Track
 
-This repository is for implementations of our systems submitted to the BC7 Challenge in 2021.
+This repository is for implementations of our named entity recognition (NER) and named entity normalization (NEN) systems developed to address Full-text Chemical Identification task.
 
 ## Overview & Quick Links
 
@@ -10,6 +10,18 @@ This repository is for implementations of our systems submitted to the BC7 Chall
   * **[This paper](https://academic.oup.com/database/article/doi/10.1093/database/baac074/6726385)**(8 pages) is an extension of the short system description paper above and is published on ***DATABASE*** in 2022. This paper details the motivation for selecting each system component and method. In addition, the limitations of the current system are discussed through error analysis of the model.
 
 ## Requirements
+```bash
+# Download this project
+git clone https://github.com/sylee0520/LIQUID.git
+cd bc7-chem-id
+
+# Create a conda virtual environment
+conda create -n bc7 python=3.8
+conda activate bc7
+
+# Install all requirements
+pip install -r requirements.txt
+```
 
 ## Named Entity Recognition (NER)
 
@@ -32,10 +44,10 @@ Please cite the papers below if you use our code, model/method, or our synthetic
 ```
 
 ```bash
-@article{kim2021improving,
-  title={Improving tagging consistency and entity coverage for chemical identification in full-text articles},
+@inproceedings{kim2021improving,
+  title={Improving Tagging Consistency and Entity Coverage for Chemical Identification in Full-text Articles},
   author={Kim, Hyunjae and Sung, Mujeen and Yoon, Wonjin and Park, Sungjoon and Kang, Jaewoo},
-  journal={arXiv preprint arXiv:2111.10584},
+  booktitle={Proceedings of the seventh BioCreative challenge evaluation workshop},
   year={2021}
 }
 ```
