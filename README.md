@@ -32,7 +32,7 @@ Please cite the papers below if you use our code, model/method, or our synthetic
 ```
 
 ```bash
-@@article{kim2021improving,
+@article{kim2021improving,
   title={Improving tagging consistency and entity coverage for chemical identification in full-text articles},
   author={Kim, Hyunjae and Sung, Mujeen and Yoon, Wonjin and Park, Sungjoon and Kang, Jaewoo},
   journal={arXiv preprint arXiv:2111.10584},
