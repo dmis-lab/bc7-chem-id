@@ -1,10 +1,10 @@
 # DMIS at BioCreative VII NLMChem Track
 
-This repository is for implementations of our named entity recognition (NER) and named entity normalization (NEN) systems developed to address Full-text Chemical Identification task.
+This repository is intended to implement our named entity recognition (NER) and named entity normalization (NEN) system developed to handle the Full-text Chemical Identification task introduced in the BioCreative VII challenge.
 
 ## Overview & Quick Links
 
-* **Task description**: Full-text Chemical Identification and Indexing in PubMed articles. For detailed information, please visit to the official BC7 website (**[link](https://biocreative.bioinformatics.udel.edu/tasks/biocreative-vii/track-2/)**) or see the overview paper (**[PDF](https://biocreative.bioinformatics.udel.edu/media/store/files/2021/TRACK2_pos_01_BC7_submission_223.pdf)**).
+* **Task description**: The full-text chemical identification task involves (1) locating chemical entities (NER) and (2) linking them to predefined identifiers (NEN) in the full text of a paper, including abstract and main body. For detailed information, please visit to the official BC7 website (**[link](https://biocreative.bioinformatics.udel.edu/tasks/biocreative-vii/track-2/)**) or see the overview paper (**[PDF](https://biocreative.bioinformatics.udel.edu/media/store/files/2021/TRACK2_pos_01_BC7_submission_223.pdf)**).
 * **System description**: Please check out our papers listed below.
   * **[This paper](https://arxiv.org/abs/2111.10584)**(4 papes) provides a brief description of our system and some ablation results.
   * **[This paper](https://academic.oup.com/database/article/doi/10.1093/database/baac074/6726385)**(8 pages) is an extension of the short system description paper above and is published on ***DATABASE*** in 2022. This paper details the motivation for selecting each system component and method. In addition, the limitations of the current system are discussed through error analysis of the model.
