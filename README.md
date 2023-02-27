@@ -25,11 +25,18 @@ pip install -r requirements.txt
 
 ### Download Datasets
 
+Download the datasets below and unpack them into the `data` directory (see the file structure below).
+
+* **NLMChem** ([Download]()): This dataset comprises 150 full-text articles with annotated chemical entities. The dataset is splitted into 80, 20, and 50 articles for the training, development, and test sets, respectively. See the paper of Islamaj et al. for details ([link](https://www.nature.com/articles/s41597-021-00875-1)). 
+* **NLMChem_204** ([Download]()): This dataset contains 54 newly annotated articles for use as the hidden test set in the challenge. The training set is the combination of the training and development sets of NLMChem, and the development set is the same as the test set of NLMChem.
+
+#### File Structure
+
 ```bash
 bc7-chem-id
 └── data
     ├── amino_acids.txt
-    ├── NLMChem_150
+    ├── NLMChem
         ├── bioc_xml
             ├── train.BioC.xml
             ├── dev.BioC.xml
@@ -47,9 +54,9 @@ bc7-chem-id
             ├── train.json
             ├── dev.json
             └── test.json
-    └── NLMChem_syn
-        └── train.json
 ```
+
+In addition, we can download our synthetic dataset called **NLMChem_syn** using **[this link](asdf)**, in case you want to augment your training data. The data were automatically generated using synonym replacement with entities randomly sampled from the April 1st, 2021 version of the Comparative Toxicogenomics Database.
 
 ### Download Bio-LM
 if you want to use the Bio-LM models of Lewis et al.([paper link](https://aclanthology.org/2020.clinicalnlp-1.17/)), you need to download the models' weights from **[this repository](https://github.com/facebookresearch/bio-lm)** and place them in the `pretrained_models` directory (e.g., `pretrained_models/RoBERTa-large-PM-M3-Voc-hf`). Note that we used `RoBERTa-base-PM-M3-Voc-distill-align` for the BioLM-base model and `RoBERTa-large-PM-M3-Voc` for the BioLM-large model in the challenge.
