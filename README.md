@@ -51,7 +51,7 @@ bc7-chem-id
         └── NLMChem_204
             ├── dev.BioC.xml
             └── test.BioC.xml
-    ├── NER
+    └── NER
         ├── NLMChem
             ├── train.json
             ├── dev.json
