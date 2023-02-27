@@ -29,7 +29,7 @@ You need to download the datasets below and unpack them into the `data` director
 
 * **NLMChem** ([Download]()): This dataset comprises 150 full-text articles with annotated chemical entities. The dataset is splitted into 80, 20, and 50 articles for the training, development, and test sets, respectively. Please refer to the paper of Islamaj et al. for details ([link](https://www.nature.com/articles/s41597-021-00875-1)). 
 * **NLMChem_204** ([Download]()): This dataset contains 54 newly annotated articles for use as the hidden test set in the challenge. The training set is the combination of the training and development sets of NLMChem, and the development set is the same as the test set of NLMChem.
-* ***NOTE***: XML file is raw full-text level data and is used to evaluate models using the official challenge evaluation script. JSON file is pre-processed to make them suitable for the Hugging Face library and consists of sentence-level sequence data.
+* ***NOTE***: XML files are raw full-text level data and are only used to evaluate models using the official challenge evaluation script. The XML data are also available on the challenge website ([link](https://biocreative.bioinformatics.udel.edu/tasks/biocreative-vii/track-2/)). JSON files are pre-processed to make them suitable for training sentence-level NER models using the Hugging Face library.
 
 #### File Structure
 
@@ -39,19 +39,17 @@ bc7-chem-id
     ├── amino_acids.txt
     ├── NLMChem
         ├── bioc_xml
-            ├── train.BioC.xml
             ├── dev.BioC.xml
             └── test.BioC.xml
-        └── json
+        └── ner_json
             ├── train.json
             ├── dev.json
             └── test.json
     ├── NLMChem_204
         ├── bioc_xml
-            ├── train.BioC.xml
             ├── dev.BioC.xml
             └── test.BioC.xml
-        └── json
+        └── ner_json
             ├── train.json
             ├── dev.json
             └── test.json
