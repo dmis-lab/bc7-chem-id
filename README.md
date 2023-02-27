@@ -58,7 +58,7 @@ bc7-chem-id
 In addition, we can download our synthetic dataset called **NLMChem_syn** using **[this link](asdf)**, in case you want to augment your training data. The data were automatically generated using synonym replacement with entities randomly sampled from the April 1st, 2021 version of the Comparative Toxicogenomics Database.
 
 ### Download Bio-LM
-if you want to use the Bio-LM models of Lewis et al. (**[paper link](https://aclanthology.org/2020.clinicalnlp-1.17/)**), you need to download the models' weights from **[this repository](https://github.com/facebookresearch/bio-lm)** and place them in the `pretrained_models` directory (e.g., `pretrained_models/RoBERTa-large-PM-M3-Voc-hf`). Note that we used `RoBERTa-base-PM-M3-Voc-distill-align` for the BioLM-base model and `RoBERTa-large-PM-M3-Voc` for the BioLM-large model in the challenge.
+If you want to use the Bio-LM models of Lewis et al. (**[paper link](https://aclanthology.org/2020.clinicalnlp-1.17/)**), you need to download the models' weights from **[this repository](https://github.com/facebookresearch/bio-lm)** and place them in the `pretrained_models` directory (e.g., `pretrained_models/RoBERTa-large-PM-M3-Voc-hf`). Note that we used `RoBERTa-base-PM-M3-Voc-distill-align` for the BioLM-base model and `RoBERTa-large-PM-M3-Voc` for the BioLM-large model in the challenge.
 
 ## Named Entity Recognition (NER)
 NER consists of the following five steps: (1) training the NER model, (2) making predictions on the test set, (3) refining the predictions using majority voting, (4) converting the refined predictions to the BC7 evaluation format (this includes a post-processing step for mutation names), and (5) evaluating the performance.
@@ -110,4 +110,4 @@ Please cite the papers below if you use our code, model/method, or our synthetic
 }
 ```
 
-Also, please note that appropriate references must be cited when using the NLMChem corpus or citing BC7 challenge results, etc.
+Also, please note that appropriate references must be cited when using the NLMChem corpus or pre-trained language models, or citing BC7 challenge results, etc.
