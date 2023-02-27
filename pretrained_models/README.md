@@ -1,1 +1,1 @@
-asdf
+If you want to use the Bio-LM models of Lewis et al. (**[paper link](https://aclanthology.org/2020.clinicalnlp-1.17/)**), you need to download the models' weights from **[this repository](https://github.com/facebookresearch/bio-lm)** and place them in this directory. Note that we used `RoBERTa-base-PM-M3-Voc-distill-align` for the BioLM-base model and `RoBERTa-large-PM-M3-Voc` for the BioLM-large model in the challenge.
