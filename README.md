@@ -1,6 +1,6 @@
 # DMIS at BioCreative VII NLMChem Track
 
-This repository is intended to implement our named entity recognition (NER) and named entity normalization (NEN) system developed to handle the Full-text Chemical Identification task introduced in the BioCreative VII challenge.
+This repository is intended to implement our named entity recognition (**NER**) and named entity normalization (**NEN**) system developed to handle the Full-text Chemical Identification task introduced in the BioCreative VII challenge.
 
 ## Overview & Quick Links
 
