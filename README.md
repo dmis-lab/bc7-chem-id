@@ -23,6 +23,9 @@ conda activate bc7
 pip install -r requirements.txt
 ```
 
+### Download Bio-LM
+if you want to use Bio-LM models of Lewis et al.([paper link](https://aclanthology.org/2020.clinicalnlp-1.17/)), you need to download the models' weights at **[this repository](https://github.com/facebookresearch/bio-lm)** and place them to the `pretrained_models` directory (e.g., `pretrained_models/RoBERTa-large-PM-M3-Voc-hf`). We used `RoBERTa-base-PM-M3-Voc-distill-align` for the BioLM-base model and `RoBERTa-large-PM-M3-Voc` for the BioLM-large model.
+
 ## Named Entity Recognition (NER)
 NER consists of the following five steps: (1) training the NER model, (2) making predictions on the test set, (3) refining the predictions using majority voting, (4) converting the refined predictions to the BC7 evaluation format (this includes a post-processing step for mutation names), and (5) evaluating the performance.
 
