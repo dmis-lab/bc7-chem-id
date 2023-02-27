@@ -31,7 +31,8 @@ You need to download the datasets below and unpack them into the `data` director
 
 * **BioC XML files** are raw full-text level data and are only used to evaluate models using the official challenge evaluation script. The XML data are also available on the challenge website (**[link](https://biocreative.bioinformatics.udel.edu/tasks/biocreative-vii/track-2/)**).
     * `wget http://nlp.dmis.korea.edu/projects/bc7-kim-et-al-2022/BioC_XML.zip`
-*  **NER JSON files** (**[Download](http://nlp.dmis.korea.edu/projects/bc7-kim-et-al-2022/NER.zip)**) are pre-processed JSON files to make the raw files suitable for training sentence-level NER models using the Hugging Face library.
+*  **NER JSON files** are pre-processed JSON files to make the raw files suitable for training sentence-level NER models using the Hugging Face library.
+    * `wget http://nlp.dmis.korea.edu/projects/bc7-kim-et-al-2022/NER.zip`  
 
 The following two datasets are included in the ZIP files.
 * **NLMChem**: This dataset comprises 150 full-text articles with annotated chemical entities. The dataset is splitted into 80, 20, and 50 articles for the training, development, and test sets, respectively. Please refer to the paper of Islamaj et al. for details (**[link](https://www.nature.com/articles/s41597-021-00875-1)**). 
@@ -61,7 +62,8 @@ bc7-chem-id
             └── test.json
 ```
 
-In addition, we can download our synthetic dataset called **NLMChem_syn** using **[this link](http://nlp.dmis.korea.edu/projects/bc7-kim-et-al-2022/NLMChem_syn.zip)**, in case you want to augment your training data. The data were automatically generated using synonym replacement with entities randomly sampled from the April 1st, 2021 version of the Comparative Toxicogenomics Database.
+In addition, we can download our synthetic dataset called **NLMChem_syn**, in case you want to augment your training data. The data were automatically generated using synonym replacement with entities randomly sampled from the April 1st, 2021 version of the Comparative Toxicogenomics Database.
+* `wget http://nlp.dmis.korea.edu/projects/bc7-kim-et-al-2022/NLMChem_syn.zip`
 
 ### Download Bio-LM
 If you want to use the Bio-LM models of Lewis et al. (**[paper link](https://aclanthology.org/2020.clinicalnlp-1.17/)**), you need to download the models' weights from **[this repository](https://github.com/facebookresearch/bio-lm)** and place them in the `pretrained_models` directory (e.g., `pretrained_models/RoBERTa-large-PM-M3-Voc-hf`). Note that we used `RoBERTa-base-PM-M3-Voc-distill-align` for the BioLM-base model and `RoBERTa-large-PM-M3-Voc` for the BioLM-large model in the challenge.
