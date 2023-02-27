@@ -10,6 +10,8 @@ This repository is intended to implement our named entity recognition (NER) and 
   * **[This paper](https://academic.oup.com/database/article/doi/10.1093/database/baac074/6726385)**(8 pages) is an extension of the short system description paper above and is published on ***DATABASE*** in 2022. This paper details the motivation for selecting each system component and method. In addition, the limitations of the current system are discussed through error analysis of the model.
 
 ## Requirements
+This repository has been tested on Python==3.8, PyTorch==1.9.0, and Transformers=4.8.2. See the `requirements.txt` file and instructions below.
+
 ```bash
 # Download this project
 git clone https://github.com/dmis-lab/bc7-chem-id.git
@@ -64,6 +66,9 @@ If you want to use the Bio-LM models of Lewis et al. (**[paper link](https://acl
 NER consists of the following five steps: (1) training the NER model, (2) making predictions on the test set, (3) refining the predictions using majority voting, (4) converting the refined predictions to the BC7 evaluation format (this includes a post-processing step for mutation names), and (5) evaluating the performance.
 
 ```bash
+export SEED=42
+export TASK_NAME=NER
+export DATA_NAME=NLMChem
 export MODEL_NAME=pubmedbert
 
 # Step 1
@@ -80,6 +85,8 @@ make convert-all
 
 # Step 5
 make bc7-eval-ner
+
+# After Step 5, you will obtain two P/R/F scores. The first one is the performance of the model without majority voting and the second one is the performance of the model with majority voting.
 ```
 ***NOTE***: We do not plan to implement transfer learning and model ensemble, but we will consider it if requested.
 
