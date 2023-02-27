@@ -30,7 +30,7 @@ pip install -r requirements.txt
 You need to download the datasets below and unpack them into the `data` directory (see the file structure below).
 
 * **BioC XML files** are raw full-text level data and are only used to evaluate models using the official challenge evaluation script. The XML data are also available on the challenge website (**[link](https://biocreative.bioinformatics.udel.edu/tasks/biocreative-vii/track-2/)**).
- * `wget http://nlp.dmis.korea.edu/projects/bc7-kim-et-al-2022/BioC_XML.zip`
+    * `wget http://nlp.dmis.korea.edu/projects/bc7-kim-et-al-2022/BioC_XML.zip`
 *  **NER JSON files** (**[Download](http://nlp.dmis.korea.edu/projects/bc7-kim-et-al-2022/NER.zip)**) are pre-processed JSON files to make the raw files suitable for training sentence-level NER models using the Hugging Face library.
 
 The following two datasets are included in the ZIP files.
