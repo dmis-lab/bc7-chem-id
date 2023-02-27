@@ -92,7 +92,7 @@ make convert-all
 # Step 5
 make bc7-eval-ner
 
-# After Step 5, you will obtain two P/R/F scores. It looks like:
+# After Step 5, you will obtain two P/R/F scores. They look like:
 # P = 0.8099, R = 0.8784, F = 0.8428
 # ...
 # P = 0.8135, R = 0.8865, F = 0.8485
