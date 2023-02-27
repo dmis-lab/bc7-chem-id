@@ -86,7 +86,10 @@ make convert-all
 # Step 5
 make bc7-eval-ner
 
-# After Step 5, you will obtain two P/R/F scores. The first one is the performance of the model without majority voting and the second one is the performance of the model with majority voting.
+# After Step 5, you will obtain two P/R/F scores. It looks like:
+# P = 0.8135, R = 0.8865, F = 0.8485
+# The first one is the performance of the model without majority voting
+# and the second one is the performance of the model with majority voting.
 ```
 ***NOTE***: We do not plan to implement transfer learning and model ensemble, but we will consider it if requested.
 
