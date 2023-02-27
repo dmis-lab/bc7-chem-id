@@ -1,0 +1,22 @@
+Alanine|Ala|A
+Arginine|Arg|R
+Asparagine|Asn|N
+Aspartic acid|Asp|D
+Cysteine|Cys|C
+Glutamine|Gln|Q
+Glutamic acid|Glu|E
+Glycine|Gly|G
+Histidine|His|H
+Isoleucine|Ile|I
+Leucine|Leu|L
+Lysine|Lys|K
+Methionine|Met|M
+Phenylalanine|Phe|F
+Proline|Pro|P
+Serine|Ser|S
+Threonine|Thr|T
+Tryptophan|Trp|W
+Tyrosine|Try|Y
+Valine|Val|V
+Selenocysteine|Sec|U
+Pyrrolysine|Pyl|O
