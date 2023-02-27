@@ -32,7 +32,7 @@ You need to download the datasets below and unpack them into the `data` director
 * **BioC XML files** (**[Download](http://nlp.dmis.korea.edu/projects/bc7-kim-et-al-2022/BioC_XML.zip)**) are raw full-text level data and are only used to evaluate models using the official challenge evaluation script. The XML data are also available on the challenge website (**[link](https://biocreative.bioinformatics.udel.edu/tasks/biocreative-vii/track-2/)**).
 *  **NER JSON files** (**[Download](http://nlp.dmis.korea.edu/projects/bc7-kim-et-al-2022/NER.zip)**) are pre-processed JSON files to make the raw files suitable for training sentence-level NER models using the Hugging Face library.
 
-The following two datasets are included in our repository.
+The following two datasets are included in the ZIP files.
 * **NLMChem**: This dataset comprises 150 full-text articles with annotated chemical entities. The dataset is splitted into 80, 20, and 50 articles for the training, development, and test sets, respectively. Please refer to the paper of Islamaj et al. for details (**[link](https://www.nature.com/articles/s41597-021-00875-1)**). 
 * **NLMChem_204**: This dataset contains 54 newly annotated articles for use as the hidden test set in the challenge. The training set is the combination of the training and development sets of NLMChem, and the development set is the same as the test set of NLMChem.
 
