@@ -128,7 +128,7 @@ Please cite the papers below if you use our code, model/method, or our synthetic
 }
 ```
 
-Also, please note that appropriate references must be cited when using the NLMChem corpus or pre-trained language models, or citing BC7 challenge results, etc.
+Our code was written based on the code base provided in the challenge website (**[link](https://biocreative.bioinformatics.udel.edu/tasks/biocreative-vii/track-2/)**). Also, it should be noted that appropriate references must be cited when using the NLMChem corpus or pre-trained language models, or citing BC7 challenge results, etc.
 
 ## Contact
 Please contact `hyunjae-kim@korea.ac.kr` if you have any!
